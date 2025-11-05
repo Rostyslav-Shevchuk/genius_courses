@@ -1,0 +1,1 @@
+This is my learning project — a journey into the world of web development, where I will step by step master the art of creating my own website. Here, on this digital canvas, I will be able to boldly experiment with new ideas, bring creative concepts to life, and at the same time hone my skills by learning to protect this site from cyberattacks.
