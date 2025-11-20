@@ -56,7 +56,7 @@
             <div class="container hero_container">
                 <p class="name_hero">Косметологічна клініка</p>
                 <h1 class="hero_title">beauty <br> zone</h1>
-                <button type="button">Замовити дзвінок</button>
+                <button class="modal-btn-open" type="button">Замовити дзвінок</button>
                 <p class="description_hero">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
             </div>
         </section>
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </section>
-        <section class="section" id="why_us-section">
+        <section class="section section_why-us" id="why_us-section">
             <div class="container">
                 <h2 class="why_us-title">Чому люди <span>обирають нас</span></h2>
                 <div class="card-why_us">
@@ -119,16 +119,25 @@
                             <use width="16" height="16" href="./images/svg-sprite.svg#icon-Arrow"></use>
                         </svg>
                     </button>
-                    <ul>
+                    <ul class="list_our-procedures">
                         <li>
-                            <img src="images/mask-for_face.jpg" alt="">
-                            <p>Маски <br> для обличчя</p>
+                            <div class="procedure-item">
+                                <div class="procedure-overlay"></div>
+                                <img src="images/mask-for_face.jpg" alt="">
+                                <p>Маски <br> для обличчя</p>
+                            </div>
                         </li>
                         <li>
-                            <img src="images/botox-for_face.jpg" alt="">
+                            <div class="procedure-item">
+                                <div class="procedure-overlay"></div>
+                                <img src="images/botox-for_face.jpg" alt="">
+                            </div>
                         </li>
                         <li>
-                            <img src="images/scrab-for_face.jpg" alt="">
+                            <div class="procedure-item">
+                                <div class="procedure-overlay"></div>
+                                <img src="images/scrab-for_face.jpg" alt="">
+                            </div>
                         </li>
                         </ul>
                     <button class="button-our_procedures">
@@ -141,17 +150,25 @@
         </section>
         <section class="section" id="contacts-section">
             <div class="container">
-                <h2>Як нас <span>знайти</span></h2>
-                <div>
-                    <iframe
+                <h2 class="contacts_title">Як нас <span>знайти</span></h2>
+                <div class="content_contacts">
+                    <iframe class="map"
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6063.1376612172135!2d30.4822646060463!3d50.45197865484868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1763478387056!5m2!1sru!2sua"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <div>
-                        <h3>Запишіться <span>безкоштовно</span> та отримайте подарунок</h3>
-
-                        <button type="button">Записатись безкоштовно</button>
-                        <p>Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
+                    <div class="form_contacts">
+                        <h4>Запишіться <span>безкоштовно</span> та отримайте подарунок</h4>
+                        <div class="action_contacts">
+                            <form action="/submit" method="POST">
+                                <input class="input_contact" type="text" id="name" name="name" required placeholder="Ваше ім'я та прізвище">
+                                <input class="input_contact" type="tel" id="phone" name="phone" placeholder="Ваш номер телефону" required pattern="\+?[\d\s\-\(\)]{10,20}"     autocomplete="tel">
+                                <input class="input_contact" type="email" id="email" name="email" placeholder="Ваша електронна пошта" required autocomplete="email">
+                            </form>
+                            <div class="button_p_contact">
+                                <button class="button_contacts" type="button">Записатись безкоштовно</button>
+                                <p>Натискаючи на кнопку я погоджуюсь<br>з політикою конфіденційності</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,5 +228,11 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop">
+        <div class="modal">
+            <button class="modal-btn-close">Close</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
