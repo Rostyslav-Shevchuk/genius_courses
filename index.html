@@ -159,15 +159,15 @@
                     <div class="form_contacts">
                         <h4>Запишіться <span>безкоштовно</span> та отримайте подарунок</h4>
                         <div class="action_contacts">
-                            <form action="/submit" method="POST">
+                            <form name="comtact-form" method="POST" autocomplete="on" novalidate>
                                 <input class="input_contact" type="text" id="name" name="name" required placeholder="Ваше ім'я та прізвище">
                                 <input class="input_contact" type="tel" id="phone" name="phone" placeholder="Ваш номер телефону" required pattern="\+?[\d\s\-\(\)]{10,20}"     autocomplete="tel">
                                 <input class="input_contact" type="email" id="email" name="email" placeholder="Ваша електронна пошта" required autocomplete="email">
+                                <div class="button_p_contact">
+                                    <button class="button_contacts" type="submit">Записатись безкоштовно</button>
+                                    <p>Натискаючи на кнопку я погоджуюсь<a href="#">з політикою конфіденційності</a></p>
+                                </div>
                             </form>
-                            <div class="button_p_contact">
-                                <button class="button_contacts" type="button">Записатись безкоштовно</button>
-                                <p>Натискаючи на кнопку я погоджуюсь<br>з політикою конфіденційності</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,9 +228,26 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal-btn-close">Close</button>
+            <h1 class="modal_title">Замовити<br>дзвінок</h1>
+            <p class="modal_title_p">Запишіться <span>безкоштовно</span><br>та отримайте подарунок</p>
+            <div class="modal_form_container">
+                <div class="action_contacts">
+                    <form class="form_modal" name="comtact-form" method="POST" autocomplete="on" novalidate>
+                        <input class="input_contact" type="text" id="name" name="name" required placeholder="Ваше ім'я та прізвище">
+                        <input class="input_contact" type="tel" id="phone" name="phone" placeholder="Ваш номер телефону" required
+                            pattern="\+?[\d\s\-\(\)]{10,20}" autocomplete="tel">
+                        <input class="input_contact" type="email" id="email" name="email" placeholder="Ваша електронна пошта" required
+                            autocomplete="email">
+                        <div class="button_p_contact">
+                            <button class="button_contacts" type="submit">Записатись безкоштовно</button>
+                            <p>Натискаючи на кнопку я погоджуюсь<a href="#">з політикою конфіденційності</a></p>
+                        </div>
+                    </form>
+                    </div>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>
