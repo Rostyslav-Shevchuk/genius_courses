@@ -1,8 +1,6 @@
-.hero_btn {
+button {
     background-color: var(--color-primary-light);
     color: var(--color-primary-white);
-    width: 219px;
-    height: 53px;
     border: 2px solid var(--color-primary-light);
     border-radius: 32px;
     cursor: pointer;
@@ -13,29 +11,13 @@
     margin-bottom: 14px;
     transition: color 0.3s, background-color 0.3s;
 }
-
-.hero_btn:hover {
+.hero-section__button:hover,
+.button_contacts:hover {
     background-color: transparent;
     color: var(--color-primary-dark);
 }
 
 .button_contacts {
-    background-color: var(--color-primary-light);
-    color: var(--color-primary-white);
     width: 281px;
     height: 53px;
-    border: 2px solid var(--color-primary-light);
-    border-radius: 32px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 100%;
-    padding: 32px, 16px;
-    margin-bottom: 14px;
-    transition: color 0.3s, background-color 0.3s;
-}
-
-.button_contacts:hover {
-    background-color: transparent;
-    color: var(--color-primary-white);
 }

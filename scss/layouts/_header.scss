@@ -1,0 +1,60 @@
+.header {
+    padding: 32px 32px;
+    position: sticky;
+    top: 0;
+    background: var(--color-primary-white);
+    z-index: 5;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 56px;
+        flex-grow: 1;
+        justify-content: center;
+
+        @media screen and (max-width: $bp-tablet) {
+            display: none;
+        }
+    }
+
+    &__burger {
+        display: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        fill: var(--color-primary-dark);
+
+        @media screen and (max-width: $bp-tablet) {
+            display: block;
+        }
+    }
+
+    &__social-links, li a svg {
+        display: flex;
+        gap: 32px;
+        fill: var(--color-primary-dark);
+        @media screen and (max-width: $bp-tablet) {
+            display: none;
+        }
+    }
+
+    &__link {
+        color: var(--color-primary-dark);
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+    &__link:hover {
+        color: var(--color-primary-light);
+    } 
+}
