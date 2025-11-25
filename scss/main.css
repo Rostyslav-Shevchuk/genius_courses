@@ -177,7 +177,7 @@ button {
 
 /* Hero section */
 .hero-section {
-  background-image: url("/images/beauty_background.jpg");
+  background-image: url("./images/beauty_background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
