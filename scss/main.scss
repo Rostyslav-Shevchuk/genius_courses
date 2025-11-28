@@ -18,45 +18,7 @@
 @import './layouts/hero-section';
 
 /* about us section */
-.about_us_section {
-    display: flex;
-    justify-content: space-around;
-    gap: 32px;
-    margin-bottom: 176px;
-}
-
-.description-about_us {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.about_us-title {
-    color: var(--color-primary-dark);
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 100%;
-}
-
-.about_us-title span {
-    color: var(--color-primary-light);
-}
-
-.about_us-img {
-    position: relative;
-}
-
-.about_us-img::after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 30px;
-    left: 120px;
-    background-repeat: no-repeat;
-    background-image: url('/genius_courses/images/star.png');
-    content: ' ';
-    z-index: 2;
-}
+@import './layouts/about-us-section';
 
 
 /* Why us section */
@@ -118,7 +80,7 @@
     height: 1785px;
     top: -200px;
     left: 0;
-    background-image: url('/genius_courses/images/background_blue.png');
+    background-image: url('../../images/background_blue.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -390,7 +352,7 @@ footer {
     padding: 32px 0;
     font-size: 16px;
     background: var(--color-primary-dark);
-    background-image: url('/genius_courses/images/background_footer.png');
+    background-image: url('../../images/background_footer.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -415,7 +377,7 @@ footer::after {
     bottom: 0;
     right: 0;
     background-repeat: no-repeat;
-    background-image: url('/genius_courses/images/pexels-photo-footer.png');
+    background-image: url('../../images/pexels-photo-footer.png');
     content: ' ';
 }
 
