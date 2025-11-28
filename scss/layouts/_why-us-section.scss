@@ -1,0 +1,74 @@
+.why-us-section {
+  position: relative;
+  &__title {
+    color: var(--color-primary-dark);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+    max-width: 432px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 48px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 38px;
+      max-width: 375px;
+    }
+  }
+  &__title span {
+    color: var(--color-primary-light);
+  }
+  &__cards ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 0 78px;
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  }
+
+  &__cards ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 32px;
+    padding: 16px;
+    background: var(--color-primary-white);
+    box-shadow: 0px 4px 4px rgba(168, 198, 245, 0.38);
+    width: auto;
+    height: auto;
+    max-width: 316px;
+    max-height: 400px;
+  }
+
+  &__cards ul li p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 252px;
+  }
+
+  &__cards ul li svg {
+    width: 48px;
+    height: 48px;
+    fill: var(--color-primary-light);
+  }
+
+  &__cards::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1785px;
+    top: -200px;
+    left: 0;
+    background-image: url('/../../../genius_courses/images/background_blue.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    z-index: -1;
+  }
+}
